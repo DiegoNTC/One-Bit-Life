@@ -9,7 +9,7 @@ return(
         <ScrollView showsVerticalScrollIndicator={false}>
             <view>
                 <image
-                    sorce={require("../..>assts/icons/logos3.png")}
+                    sorce={require("../..assets/icons/logos3.png")}
                     />
                 <text>
                     Vamos transformar sua vida {"/n"}em jogo , Buscando sempre{"/n"} o melhor nível
