@@ -1,23 +1,19 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
-import { ScrollView } from "react-native-gesture-handler";
+import { View, Text, Image, ScrollView } from "react-native";
 
-export default function Start(){
-
-return(
+export default function Start() {
+  return (
     <View>
-        <ScrollView showsVerticalScrollIndicator={false}>
-            <view>
-                <image
-                    sorce={require("../..assets/icons/logos3.png")}
-                    />
-                <text>
-                    Vamos transformar sua vida {"/n"}em jogo , Buscando sempre{"/n"} o melhor nível
-                </text>       
-            </view>        
-        </ScrollView>
+      <ScrollView showVerticalScrollIndicator={false}>
+        <View>
+          <Image source={require("../../assets/icons/logo3.png")} />
+
+          <Text>
+            Vamos transformar Sua Vida {"/n"} em jogo, buscando sempre {"/n"} o
+            melhor nivel.
+          </Text>
+        </View>
+      </ScrollView>
     </View>
-
-)
-
+  );
 }
