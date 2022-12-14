@@ -11,9 +11,9 @@ return(
                 <image
                     sorce={require("../..>asstes/icons/logos3.png")}
                     />
-                <texte>
-                    vamos se foder
-                </texte>       
+                <text>
+                    Vamos transformar sua vida {"/n"}em jogo , Buscando sempre{"/n"} o melhor nível
+                </text>       
             </view>        
         </ScrollView>
     </View>
