@@ -1,23 +1,42 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
-import { ScrollView } from "react-native-gesture-handler";
+import { View, Text, Image, ScrollView, StyleSheet } from "react-native";
 
-export default function Start(){
+export default function Start() {
+  return (
+    <View style={styles.container}>
+      <ScrollView style={styles.scroll} showVerticalScrollIndicator={false}>
+        <View style={{ alignItems: "center" }}>
+          <Image
+            source={require("../../assets/icons/logo3.png")}
+            style={styles.logo}
+          />
 
-return(
-    <View>
-        <ScrollView showsVerticalScrollIndicator={false}>
-            <view>
-                <image
-                    sorce={require("../..>asstes/icons/logos3.png")}
-                    />
-                <texte>
-                    vamos se foder
-                </texte>       
-            </view>        
-        </ScrollView>
+          <Text style={styles.description}>
+            Vamos transformar Sua Vida {"\n"} em jogo, buscando sempre {"\n"} o
+            melhor nivel.
+          </Text>
+        </View>
+      </ScrollView>
     </View>
-
-)
-
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "rgba(21, 21, 21, 0.98)",
+  },
+
+  logo: {
+    width: 300,
+    height: 60,
+    marginTop: 60,
+    marginBottom: 20,
+  },
+  description: {
+    color: "#FFFFFF",
+    fontSize: 20,
+    textAlign: "center",
+    marginVertical: 60,
+  },
+});
