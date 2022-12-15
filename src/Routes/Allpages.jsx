@@ -17,4 +17,8 @@ export default function AllPages() {
       </Stack.Navigator>
     </NavigationContainer>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 996da68c7f1073355a23e32f52696db429f72972
